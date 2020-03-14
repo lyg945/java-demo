@@ -9,5 +9,7 @@
         <module>dubbo-nacos</module>
         <module>dubbo-zookeeper</module>
         <module>dubbo-zookeeper-mq</module>
+        <module>dubbo-zookeeper-oss</module>
+        <module>dubbo-zookeeper-redis</module>
     </modules>
 </project>
