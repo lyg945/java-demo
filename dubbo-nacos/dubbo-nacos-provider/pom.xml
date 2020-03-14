@@ -2,11 +2,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>dubbo</artifactId>
+        <artifactId>dubbo-nacos</artifactId>
         <version>1.0.0</version>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>dubbo-provider</artifactId>
+    <artifactId>dubbo-nacos-provider</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
@@ -25,19 +25,18 @@
 
         <dependency>
             <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-dependencies-zookeeper</artifactId>
-            <type>pom</type>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>dubbo-registry-nacos</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>dubbo-interface</artifactId>
+            <artifactId>dubbo-nacos-interface</artifactId>
             <version>1.0.0</version>
         </dependency>
 
