@@ -9,8 +9,6 @@
     <artifactId>dubbo-provider</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>${project.artifactId}</name>
-    <description>The demo provider module of dubbo project</description>
 
     <dependencies>
 

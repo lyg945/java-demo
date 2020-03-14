@@ -9,8 +9,7 @@
     <artifactId>dubbo-interface</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>${project.artifactId}</name>
-    <description>The demo module of dubbo project</description>
+
     <properties>
         <skip_maven_deploy>true</skip_maven_deploy>
     </properties>

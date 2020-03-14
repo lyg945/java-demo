@@ -9,8 +9,7 @@
     <artifactId>dubbo-consumer</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>${project.artifactId}</name>
-    <description>The demo consumer module of dubbo project</description>
+
 
     <dependencies>
 
