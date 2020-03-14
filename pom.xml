@@ -7,5 +7,6 @@
 
     <modules>
         <module>dubbo</module>
+        <module>cloud</module>
     </modules>
 </project>
