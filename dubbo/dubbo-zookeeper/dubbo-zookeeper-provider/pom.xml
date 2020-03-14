@@ -2,14 +2,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>dubbo</artifactId>
+        <artifactId>dubbo-zookeeper</artifactId>
         <version>1.0.0</version>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>dubbo-consumer</artifactId>
+    <artifactId>dubbo-zookeeper-provider</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-
 
     <dependencies>
 
@@ -38,7 +37,7 @@
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>dubbo-interface</artifactId>
+            <artifactId>dubbo-zookeeper-interface</artifactId>
             <version>1.0.0</version>
         </dependency>
 

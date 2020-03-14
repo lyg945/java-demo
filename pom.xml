@@ -27,8 +27,7 @@
     </properties>
 
     <modules>
-        <module>dubbo</module>
-        <module>dubbo-nacos</module>
         <module>cloud</module>
+        <module>dubbo</module>
     </modules>
 </project>
