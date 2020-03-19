@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+
+<th:block th:remove="all">
+    <th:block th:remove="tag" th:fragment="subject" th:if="${event.statusInfo.status} == 'OFFLINE'">
+        监控中心-故障告警
+    </th:block>
+    <th:block th:remove="tag" th:fragment="subject" th:if="${event.statusInfo.status} == 'UP'">
+        监控中心-系统报警解除！
+    </th:block>
+</th:block>
+
+
+<td th:switch="${event.statusInfo.status }">
+    <div th:case="UP">
+        系统报警解除！<br>
+        --------------------------------------<br>
+        告警服务名称： <span th:text="${instance.registration.name}"/><br>
+        告警服务实例ID： <span th:text="${instance.id}"/> <br>
+        告警主机IP： <a th:href="${instance.registration.serviceUrl}" th:text="${instance.registration.serviceUrl}"></a><br>
+        之前状态： 下线 <br>
+        当前状态： <font color="green">上线啦,上线啦，上线啦</font> <br>
+    </div>
+    <div th:case="OFFLINE">
+        监控平台发现系统报警! <br>
+        --------------------------------------<br>
+        告警服务名称： <span th:text="${instance.registration.name}"/><br>
+        告警服务实例ID： <span th:text="${instance.id}"/> <br>
+        告警主机IP： <a th:href="${instance.registration.serviceUrl}" th:text="${instance.registration.serviceUrl}"></a><br>
+        之前状态： 上线 <br>
+        当前状态： <font color="red">SSO，SSO，SSO</font> <br>
+    </div>
+</td>
