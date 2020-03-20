@@ -29,5 +29,6 @@
     <modules>
         <module>cloud</module>
         <module>dubbo</module>
+        <module>alibaba</module>
     </modules>
 </project>
