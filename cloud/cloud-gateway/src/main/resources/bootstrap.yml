@@ -2,7 +2,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   profiles:
-    active: dev
+    active: local
   application:
     name: cloud-gateway
   cloud:
@@ -14,9 +14,6 @@ spring:
           - data-id: cloud-common.yml
           - data-id: cloud-common-${spring.profiles.active}.yml
 #          - data-id: datasource.yml
-        namespace: ${nacos.namespace.${spring.profiles.active}}
-      discovery:
-        server-addr: ${nacos.addr}
         namespace: ${nacos.namespace.${spring.profiles.active}}
 
 nacos:

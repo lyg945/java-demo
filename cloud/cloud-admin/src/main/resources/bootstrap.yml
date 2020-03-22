@@ -15,9 +15,6 @@ spring:
           - data-id: cloud-common-${spring.profiles.active}.yml
 #          - data-id: datasource.yml
         namespace: ${nacos.namespace.${spring.profiles.active}}
-      discovery:
-        server-addr: ${nacos.addr}
-        namespace: ${nacos.namespace.${spring.profiles.active}}
 
 nacos:
   addr: 172.16.6.146:8848
