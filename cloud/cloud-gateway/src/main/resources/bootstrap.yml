@@ -1,0 +1,29 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
+  application:
+    name: cloud-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.addr}
+        file-extension: yml
+        extension-configs:
+          - data-id: cloud-common.yml
+          - data-id: cloud-common-${spring.profiles.active}.yml
+#          - data-id: datasource.yml
+        namespace: ${nacos.namespace.${spring.profiles.active}}
+      discovery:
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace.${spring.profiles.active}}
+
+nacos:
+  addr: 172.16.6.146:8848
+  namespace:
+    local: ${nacos.namespace.dev}
+    dev: 42f1228e-9ce6-4b00-a7b1-57951791d6b1
+    test: 42093f3b-6019-48b8-b658-bb4390c1ee1
+    prd: 165f3095-82e7-4dff-9b7d-6f6590089caf
+

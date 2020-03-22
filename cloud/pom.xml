@@ -21,11 +21,13 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot-admin.version>2.2.1</spring-boot-admin.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <nacos-discovery.version>2.2.0.RELEASE</nacos-discovery.version>
     </properties>
 
     <modules>
         <module>cloud-admin</module>
         <module>cloud-gateway</module>
+        <module>cloud-config</module>
     </modules>
 
     <dependencies>
@@ -51,6 +53,16 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>${nacos-discovery.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>${nacos-discovery.version}</version>
         </dependency>
     </dependencies>
 
