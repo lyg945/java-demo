@@ -16,7 +16,7 @@
         <argline>-server -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true</argline>
         <arguments/>
 
-        <dubbo.version>2.7.5</dubbo.version>
+        <dubbo.version>2.7.15</dubbo.version>
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <rocketmq-spring.version>2.1.0</rocketmq-spring.version>
     </properties>
